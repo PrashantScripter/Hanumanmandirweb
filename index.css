@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.btn {
+    margin-top: 1rem;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 0.5rem 2rem;
+    background-color: rgb(249, 160, 7);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgb(218, 143, 4);
+    transition: 0.3s;
+    box-shadow: 1px 1px 5px 1px gray;
+}
+
+.logo img {
+    height: 70px;
+    margin-left: 3rem;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: orange;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.187);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.493);
+}
+
+.nav-list {
+    display: flex;
+    gap: 3.8rem;
+    align-items: center;
+    margin-right: 3rem;
+}
+
+.nav-list button {
+    background-color: orange;
+    padding: 0.3rem 0.6rem;
+    cursor: pointer;
+    font-weight: 400;
+    border-radius: 5px;
+    border: 1.6px solid black;
+}
+
+.nav-list button:hover {
+    background-color: rgb(218, 143, 4);
+    transition: 0.3s;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-list a:hover {
+    color: rgb(208, 5, 5);
+    transition: 0.3s;
+}
+
+.nav-list li {
+    list-style: none;
+}
+
+.donate {
+    text-align: center;
+    margin-top: 14rem;
+
+}
+
+.photo-itwa-shivnagar {
+    margin-top:10rem;
+}
+
+.photo-itwa-shivnagar h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.Gallery {
+    max-width: 90%;
+    box-shadow: 1px 1px 10px 5px gray;
+    overflow: auto;
+    white-space: nowrap;
+    display: block;
+    margin: auto;
+    background-color: rgb(252, 235, 205);
+}
+
+.Gallery img {
+    padding: 0px 5px;
+}
+
+button.add-image {
+    display: block;
+    margin: auto;
+    padding: 5px 20px;
+    margin-top: 2rem;
+    background-color: rgb(249, 160, 7);
+    border-radius: 4px;
+    border: 1px solid black;
+    font-weight: bold;
+}
+
+.add-image:hover {
+    background-color: rgb(218, 143, 4);
+    cursor: pointer;
+    box-shadow: 1px 1px 5px 1px gray;
+    transition: 0.3s;
+}
+
+.drop-down:hover .content {
+    display: block;
+}
+
+.drop-down {
+    display: inline-block;
+}
+
+.content {
+    display: none;
+}
+
+#bar {
+    display: none;
+    background-color: black;
+    height: 4px;
+    width: 29px;
+    margin: 5px;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.hamburger-menu {
+    cursor: pointer;
+}
+
+.navbar {
+    display: flex;
+}
+
+.book {
+    text-align: center;
+    margin-top: 3rem;
+    border-top: 1px solid rgba(158, 157, 157, 0.482);
+    border-bottom: 1px solid rgba(158, 157, 157, 0.482);
+    padding-bottom: 2rem;
+}
+
+.book h4 {
+    margin-top: 2rem;
+}
+
+.social-handle iframe {
+    width: 450px;
+    height: 300px;
+    display: block;
+    margin: auto;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    box-shadow: 0px 0px 15px 1px;
+}
+
+.footer {
+    display: flex;
+    background-color: rgba(255, 166, 0, 0.663);
+    padding: 3rem;
+    font-size: 0.8rem;
+    justify-content: space-around;
+    border-top: 1px solid black;
+
+}
+
+.contact,.address{
+    color:rgb(208, 5, 5);
+    margin-bottom: 5px;
+    padding-top:10px ;
+}
+
+.email{
+    color: rgb(208, 5, 5);
+    margin-top: 1rem;
+}
+
+.link{
+    font-size: 0.6rem;
+}
+
+.social{
+    margin-top: 20px;
+    display: block;
+}
+
+.social a{
+    color: black;
+    font-size:1rem;
+    padding-right: 7px ;
+}
+
+.social a:hover{
+    color: rgb(208, 5, 5);
+    transition: 0.3s;
+}
+
+.social1{
+    display: none;
+}
+
+.subfooter{
+    background-color: rgba(255, 166, 0, 0.663);
+    padding: 1rem;
+    border-top: 0.1px solid rgba(127, 126, 126, 0.308);
+    text-align: center;
+}
+
+.subfooter p{
+    font-size: 0.6rem;
+    font-weight: lighter;
+    color: rgba(0, 0, 0, 0.588);
+
+}
+
+@media(max-width:980px) {
+    .nav-list {
+        display: none;
+    }
+
+    .social-handle iframe{
+        max-width: 70%;
+    }
+
+    .nav-link a:hover {
+        color: orangered
+    }
+
+    .nav-link {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        margin-top: 3.4rem;
+        left: 0;
+        width: 100%;
+        background-color: rgb(249, 160, 7);
+        padding: 3rem;
+    }
+
+    #bar {
+        display: block;
+        transition: all 0.2s;
+    }
+
+    .barline2 {
+        opacity: 0;
+    }
+
+    .barline1 {
+        rotate: 315deg;
+        translate: 0px 9px;
+    }
+
+    .barline3 {
+        rotate: -315deg;
+        translate: 0px -9px;
+    }
+
+    .social1{
+        display: block;
+    }
+
+    .social1 a{
+        padding: 0px 6px;
+    }
+
+}
+
+@media(max-width:391px){
+    .footer{
+        display: block;
+        text-align: center;
+    }
+
+    .social{
+        display: block;
+    }
+
+}
