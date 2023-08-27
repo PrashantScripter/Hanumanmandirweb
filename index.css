@@ -246,7 +246,7 @@ button.add-image {
     }
 
     .nav-link a:hover {
-        color: orangered
+        color: orangered;
     }
 
     .nav-link {
@@ -259,6 +259,9 @@ button.add-image {
         background-color: rgb(249, 160, 7);
         padding: 3rem;
     }
+    .logo img{
+    margin-left: 1rem;
+}
 
     #bar {
         display: block;
